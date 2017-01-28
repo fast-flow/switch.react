@@ -1,0 +1,98 @@
+/* The CSS specification: https://github.com/fast-flow/trees */
+/* Base style */
+.r-switch {
+    position: relative;
+    vertical-align: middle;
+}
+/* Configurable style */
+.r-switch {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color:#CCC;
+    color:white;
+    font-size:14px;
+}
+.r-switch-checked {
+    display: none;
+}
+.r-switch-unchecked {
+    display: block;;
+}
+html .r-switch--checked {
+    background-color: #87d068;
+    .r-switch-mark {
+        left:auto;
+        right:2px;
+    }
+    .r-switch-checked {
+        display: block;
+    }
+    .r-switch-unchecked {
+        display: none;;
+    }
+}
+html .r-switch--disabled {
+    background-color: #CCC;
+    .r-switch-mark {
+        background-color: #AAA;
+    }
+}
+.r-switch-mark {
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 3px #AAA;
+}
+.r-switch-checked-symbol {
+    display:inline-block;
+    text-align: cetner;
+    content: ' ';
+    display: inline-block;
+    -moz-transform:    rotate(-50deg);
+    -o-transform:      rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform:         rotate(-50deg);
+}
+.r-switch-checked,
+.r-switch-unchecked {
+    position: relative;
+}
+.r-switch-unchecked {
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+/* Configurable style: default size */
+.r-switch-checked,
+.r-switch-unchecked {
+    padding-left: 5px;
+    padding-right: 5px;
+    color:white;
+}
+.r-switch {
+    width:40px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.r-switch-mark {
+    left:2px;top:2px;
+    width:16px;
+    height:16px;
+}
+.r-switch-checked-symbol {
+    border: 2px solid white;
+    border-top-width: 0;
+    border-right-width: 0;
+    width: 9px;
+    height: 4px;
+    position: relative;
+    top:-3px;
+    left:0px;
+}
