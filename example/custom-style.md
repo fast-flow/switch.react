@@ -22,7 +22,7 @@ html .m-switch--s .r-switch-mark {
     width:12px;
     height:12px;
 }
-html .m-switch--s .r-switch-checked-symbol {
+html .m-switch--s .r-switch-checked-symbol:before {
     border: 2px solid white;
     border-top-width: 0;
     border-right-width: 0;
@@ -31,6 +31,11 @@ html .m-switch--s .r-switch-checked-symbol {
     position: relative;
     top:-3px;
     left:0px;
+}
+html .m-switch--s .r-switch-unchecked-symbol:before,
+html .m-switch--s .r-switch-unchecked-symbol:after {
+    top:7.4px;
+    width:8px;
 }
 
 html .m-switch--m {
@@ -52,7 +57,7 @@ html .m-switch--m .r-switch-mark {
     width:16px;
     height:16px;
 }
-html .m-switch--m .r-switch-checked-symbol {
+html .m-switch--m .r-switch-checked-symbol:before {
     border: 2px solid white;
     border-top-width: 0;
     border-right-width: 0;
@@ -61,6 +66,11 @@ html .m-switch--m .r-switch-checked-symbol {
     position: relative;
     top:-3px;
     left:0px;
+}
+html .m-switch--m .r-switch-unchecked-symbol:before,
+html .m-switch--m .r-switch-unchecked-symbol:after {
+    width: 12px;
+    top:9px;
 }
 
 html .m-switch--l {
@@ -82,7 +92,7 @@ html .m-switch--l .r-switch-mark {
     width:22px;
     height:22px;
 }
-html .m-switch--l .r-switch-checked-symbol {
+html .m-switch--l .r-switch-checked-symbol:before {
     border: 2px solid white;
     border-top-width: 0;
     border-right-width: 0;
@@ -91,6 +101,12 @@ html .m-switch--l .r-switch-checked-symbol {
     position: relative;
     top:-4px;
     left:0px;
+}
+html .m-switch--l .r-switch-unchecked-symbol:before,
+html .m-switch--l .r-switch-unchecked-symbol:after {
+    width: 16px;
+    top:12px;
+    right:6px;
 }
 ````
 
